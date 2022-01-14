@@ -1,4 +1,4 @@
-package com.marceloprojets.dsmovie.repositories.dto;
+package com.marceloprojets.dsmovie.dto;
 
 import com.marceloprojets.dsmovie.entities.Movie;
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.marceloprojets.dsmovie.repositories.dto.MovieDTO;
+import com.marceloprojets.dsmovie.dto.MovieDTO;
 import com.marceloprojets.dsmovie.services.MovieService;
 
 @RestController

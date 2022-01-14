@@ -7,9 +7,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.marceloprojets.dsmovie.dto.MovieDTO;
 import com.marceloprojets.dsmovie.entities.Movie;
 import com.marceloprojets.dsmovie.repositories.MovieRepository;
-import com.marceloprojets.dsmovie.repositories.dto.MovieDTO;
 
 @Service
 public class MovieService {
