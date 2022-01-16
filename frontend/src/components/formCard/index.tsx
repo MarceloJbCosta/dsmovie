@@ -33,6 +33,7 @@ function FormCard({ movieId }: Props) {
         if(!validateEmail(email)){
             return;
         }
+
         const config: AxiosRequestConfig = {
             baseURL: BASE_URL,
             method: 'PUT',
@@ -43,14 +44,13 @@ function FormCard({ movieId }: Props) {
                 score: score
             }
         }
-        axios(config).then(reponse => {
+        axios(config).then(response => {
+           // console.log(response.data);
             navigate("/");
         })
 
 
     }
-
-
     return (
         <div className="dsmovie-form-container">
             <img className="dsmovie-movie-card-image" src={movie?.image} alt={movie?.title} />
