@@ -1,11 +1,11 @@
-import './styles.css'
+
 import { Link, useNavigate } from 'react-router-dom';
 import { Movie } from 'types/movie';
 import { useEffect, useState } from 'react';
 import axios, { AxiosRequestConfig } from 'axios';
 import { BASE_URL } from 'utils/requests';
 import { validateEmail } from 'utils/validate';
-
+import './styles.css'
 type Props = {
     movieId: string;
 }
@@ -27,7 +27,6 @@ function FormCard({ movieId }: Props) {
         event.preventDefault();
 
         const email = (event.target as any).email.value;
-
         const score = (event.target as any).score.value;
 
         if(!validateEmail(email)){
@@ -45,11 +44,8 @@ function FormCard({ movieId }: Props) {
             }
         }
         axios(config).then(response => {
-           // console.log(response.data);
             navigate("/");
         })
-
-
     }
     return (
         <div className="dsmovie-form-container">
